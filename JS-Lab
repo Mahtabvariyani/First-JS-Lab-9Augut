@@ -1,0 +1,73 @@
+let hacker1 = "Mahtab";
+let hacker2 = "Mahdiyeh";
+console.log(`The Driver name is '${hacker1}'`);
+console.log(`The Driver name is '${hacker2}'`);
+//Iteration 2: Conditionals
+
+if (hacker1.length > hacker2.length) {
+  console.log("The driver has the longest name, it has XX characters");
+} else if (hacker1.length < hacker2.length) {
+  console.log(
+    "It seems that the navigator has the longest name, it has XX characters"
+  );
+} else if (hacker1.length === vhacker2.length) {
+  console.log("Wow, you both have equally long names, XX characters!");
+}
+//Iteration 3: Loops
+for (let i = 0; i < hacker1.length; i++) {
+  console.log(hacker1.toUpperCase() + " ");
+}
+for (let i = hacker1.length - 1; i >= 0; i--) {
+  console.log(hacker1[i].toUpperCase());
+}
+for (let i = 0; i <= hacker1.length - 1; i++) {
+  console.log(hacker1[i]);
+}
+for (let i = hacker1.length - 1; i >= 0; i--) {
+  console.log(hacker1[i].toLocaleLowerCase());
+}
+
+//Bonus Time!
+//First
+
+let text =
+  "In literary theory, a text is any object that can be read, whether this object is a work of literature, a street sign, an arrangement of buildings on a informative message.";
+
+let text2 = "Here are some examples of palindromes:";
+
+let text3 =
+  "city block, or styles of clothing. It is a coherent set of signs that transmits some kind of ";
+
+function count(num1, num2, num3) {
+
+  if (num1.length > num2.length || num1.length > num3.length) {
+    return num1.length;
+  } else if (num2.length > num3.length || num2.length > num1.length) {
+    return num2.length;
+  } else {
+    return num3.length;
+  }
+  
+  
+}
+console.log(count(text, text2, text3));
+
+//going throu and printing the number time
+/* for(let i=0;i<=text.length-1;i++){
+    console.log(text.length);
+   
+} */
+//printing out only one time the number in it
+/* console.log(text.length) */
+
+
+let phraseToCheck="eye";
+function palindrom(str){
+    let sum=str.split("").reverse().join("");
+    if (sum ===str) return true;
+    return false;
+
+}
+
+console.log(palindrom(phraseToCheck));
+
